@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Interactive Feedback Board
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <button
+      id="addNoteBtn"
+      class="tool active"
+    >
+      <i class="fa-solid fa-plus"></i>
+    </button>
+
+    <button
+      id="addImageBtn"
+      class="tool"
+    >
+      <i class="fa-solid fa-image"></i>
+    </button>
+
+    <button
+      id="addDescImageBtn"
+      class="tool"
+    >
+      <i class="fa-solid fa-file-image"></i>
+    </button>
+
+    <button
+      id="addTodoBtn"
+      class="tool"
+    >
+      <i class="fa-solid fa-list-check"></i>
+    </button>
+
+    <button
+      id="arrangeBtn"
+      class="tool"
+    >
+      <i class="fa-solid fa-grip"></i>
+    </button>
+
+    <button
+      id="saveBtn"
+      class="tool"
+    >
+      <i class="fa-solid fa-floppy-disk"></i>
+    </button>
+
+    <button
+      id="loadBtn"
+      class="tool"
+    >
+      <i class="fa-solid fa-folder-open"></i>
+    </button>
+
+    <button
+      id="clearBtn"
+      class="tool"
+    >
+      <i class="fa-solid fa-trash-can"></i>
+    </button>
+
+  </aside>
+
+  <!-- BOARD -->
+
+  <main id="board">
+
+    <div class="topbar">
+
+      <h2>
+        Interactive Feedback Board
+      </h2>
+
+    </div>
+
+    <div class="board-title">
+
+      <h1>
+        Infinite Workspace
+      </h1>
+
+      <p>
+        Click anywhere to create content
+      </p>
+
+    </div>
+
+    <div class="workspace"></div>
+
+  </main>
+
+  <!-- IMAGE MODAL -->
+
+  <div
+    id="imageModal"
+    class="image-modal"
+    style="display:none;"
+  >
+
+    <div class="modal-card">
+
+      <h2>
+        Add Image
+      </h2>
+
+      <div
+        id="uploadArea"
+        class="upload-area"
+      >
+
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+        <h3>
+          Upload Image
+        </h3>
+
+        <button
+          id="chooseFileBtn"
+          class="choose-btn"
+        >
+          Choose File
+        </button>
+
+      </div>
+
+      <input
+        type="text"
+        id="imageURLInput"
+        class="url-input"
+        placeholder="Paste image URL..."
+      />
+
+      <button
+        id="addURLBtn"
+        class="url-btn"
+      >
+        Add From URL
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
