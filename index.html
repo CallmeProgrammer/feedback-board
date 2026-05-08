@@ -5,24 +5,15 @@
 
   <meta charset="UTF-8" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>
     Interactive Feedback Board
   </title>
 
-  <link
-    rel="stylesheet"
-    href="style.css"
-  />
+  <link rel="stylesheet" href="style.css" />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
 </head>
 
@@ -32,59 +23,35 @@
 
   <aside class="sidebar">
 
-    <button
-      id="addNoteBtn"
-      class="tool active"
-    >
+    <button id="addNoteBtn" class="tool active" data-tooltip="Add Note">
       <i class="fa-solid fa-plus"></i>
     </button>
 
-    <button
-      id="addImageBtn"
-      class="tool"
-    >
+    <button id="addImageBtn" class="tool" data-tooltip="Add Image">
       <i class="fa-solid fa-image"></i>
     </button>
 
-    <button
-      id="addDescImageBtn"
-      class="tool"
-    >
+    <button id="addDescImageBtn" class="tool" data-tooltip="Add Descriptive Image">
       <i class="fa-solid fa-file-image"></i>
     </button>
 
-    <button
-      id="addTodoBtn"
-      class="tool"
-    >
+    <button id="addTodoBtn" class="tool" data-tooltip="Add To-Do List">
       <i class="fa-solid fa-list-check"></i>
     </button>
 
-    <button
-      id="arrangeBtn"
-      class="tool"
-    >
+    <button id="arrangeBtn" class="tool" data-tooltip="Arrange Items">
       <i class="fa-solid fa-grip"></i>
     </button>
 
-    <button
-      id="saveBtn"
-      class="tool"
-    >
+    <button id="saveBtn" class="tool" data-tooltip="Save Board">
       <i class="fa-solid fa-floppy-disk"></i>
     </button>
 
-    <button
-      id="loadBtn"
-      class="tool"
-    >
+    <button id="loadBtn" class="tool" data-tooltip="Load Board">
       <i class="fa-solid fa-folder-open"></i>
     </button>
 
-    <button
-      id="clearBtn"
-      class="tool"
-    >
+    <button id="clearBtn" class="tool" data-tooltip="Clear Board">
       <i class="fa-solid fa-trash-can"></i>
     </button>
 
@@ -120,11 +87,7 @@
 
   <!-- IMAGE MODAL -->
 
-  <div
-    id="imageModal"
-    class="image-modal"
-    style="display:none;"
-  >
+  <div id="imageModal" class="image-modal" style="display:none;">
 
     <div class="modal-card">
 
@@ -132,10 +95,7 @@
         Add Image
       </h2>
 
-      <div
-        id="uploadArea"
-        class="upload-area"
-      >
+      <div id="uploadArea" class="upload-area">
 
         <i class="fa-solid fa-cloud-arrow-up"></i>
 
@@ -143,26 +103,15 @@
           Upload Image
         </h3>
 
-        <button
-          id="chooseFileBtn"
-          class="choose-btn"
-        >
+        <button id="chooseFileBtn" class="choose-btn">
           Choose File
         </button>
 
       </div>
 
-      <input
-        type="text"
-        id="imageURLInput"
-        class="url-input"
-        placeholder="Paste image URL..."
-      />
+      <input type="text" id="imageURLInput" class="url-input" placeholder="Paste image URL..." />
 
-      <button
-        id="addURLBtn"
-        class="url-btn"
-      >
+      <button id="addURLBtn" class="url-btn">
         Add From URL
       </button>
 
